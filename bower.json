@@ -1,0 +1,17 @@
+{
+  "name": "pinxto_Destroyable",
+  "version": "1.0.0",
+  "homepage": "https://github.com/pintxo/Destroyable",
+  "authors": [
+    "Jelle Versele"
+  ],
+  "main": "src/Destroyable",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
