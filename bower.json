@@ -5,7 +5,7 @@
   "authors": [
     "Jelle Versele"
   ],
-  "main": "src/Destroyable",
+  "main": "index.js",
   "license": "MIT",
   "ignore": [
     "**/.*",

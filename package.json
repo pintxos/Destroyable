@@ -1,7 +1,7 @@
 {
   "name": "Destroyable",
-  "version": "0.0.0",
-  "description": "Destroyable ===========",
+  "version": "1.0.0",
+  "description": "",
   "main": "Destroyable.js",
   "devDependencies": {
     "grunt-contrib-jshint": "^0.10.0",

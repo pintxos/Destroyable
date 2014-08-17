@@ -1,8 +1,9 @@
 /**
- * Serves as a base layer for all destroyable objects.
- * Impelements init and destroy methods.
+ * Serves as a base layer for other components to make sure
+ * they all implement the same lifecycle API.
  */
 
+// UMD
 if(typeof define !== 'function') {
 	define = function( deps, definition ) {
 		window.pintxos = window.pintxos || {};
@@ -12,6 +13,8 @@ if(typeof define !== 'function') {
 }
 
 define([], function () {
+
+	'use strict';
 
 	/* Constructor
 	----------------------------------------------- */	
