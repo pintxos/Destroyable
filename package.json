@@ -2,7 +2,7 @@
   "name": "Destroyable",
   "version": "1.0.0",
   "description": "",
-  "main": "Destroyable.js",
+  "main": "index.js",
   "devDependencies": {
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-karma": "^0.8.3",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pintxo/Destroyable.git"
+    "url": "git://github.com/pintxos/Destroyable.git"
   },
   "author": "Jelle Versele",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pintxo/Destroyable/issues"
+    "url": "https://github.com/pintxos/Destroyable/issues"
   },
-  "homepage": "https://github.com/pintxo/Destroyable"
+  "homepage": "https://github.com/pintxos/Destroyable"
 }
