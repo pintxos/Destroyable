@@ -1,0 +1,27 @@
+{
+  "name": "Destroyable",
+  "version": "0.0.0",
+  "description": "Destroyable ===========",
+  "main": "Destroyable.js",
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-karma": "^0.8.3",
+    "karma": "^0.12.21",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "load-grunt-tasks": "^0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pintxo/Destroyable.git"
+  },
+  "author": "Jelle Versele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pintxo/Destroyable/issues"
+  },
+  "homepage": "https://github.com/pintxo/Destroyable"
+}

@@ -3,6 +3,14 @@
  * Impelements init and destroy methods.
  */
 
+if(typeof define !== 'function') {
+	define = function( deps, definition ) {
+		window.pintxos = window.pintxos || {};
+		window.pintxos.Destroyable = definition();
+		define = null;
+	};
+}
+
 define([], function () {
 
 	/* Constructor
