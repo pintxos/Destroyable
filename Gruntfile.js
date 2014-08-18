@@ -17,26 +17,27 @@ module.exports = function (grunt) {
 				]
 			},
 
-  			dev: {
-    			browsers: ['Chrome']	
-  			},
+			dev: {
+				browsers: ['Chrome']	
+			},
 
-  			ci: {
-  				browsers: ['PhantomJS'],
-  				singleRun: true
-  			}
+			ci: {
+				browsers: ['PhantomJS'],
+				singleRun: true
+			}
 		},
 
 		jshint: {
-            files: ['*.js'],
-            options: {
-                es3: true
-            }
-        }
+			files: ['*.js'],
+			options: {
+				es3: true
+			}
+		}
 	});
 
 	grunt.registerTask('default', []);
-	grunt.registerTask('test', ['jshint', 'karma:ci']);
+	grunt.registerTask('test', ['jshint', 'karma:dev']);
+	grunt.registerTask('testCI', ['jshint', 'karma:ci']);
 
 };
 

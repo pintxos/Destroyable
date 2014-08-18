@@ -13,7 +13,7 @@
     "load-grunt-tasks": "^0.6.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt testCI"
   },
   "repository": {
     "type": "git",
