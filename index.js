@@ -3,61 +3,65 @@
  * they all implement the same lifecycle API.
  */
 
-// UMD
-if(typeof define !== 'function') {
-	define = function( deps, definition ) {
-		window.pintxos = window.pintxos || {};
-		window.pintxos.Destroyable = definition();
-		define = null;
-	};
-}
-
-define([], function () {
+(function (window) {
 
 	'use strict';
 
-	/* Constructor
-	----------------------------------------------- */	
-	var Destroyable = function () {
-		this._isDestroyed = true;
-	};
-	
+	// UMD
+	if(typeof define !== 'function') {
+		window.define = function( deps, definition ) {
+			window.pintxos = window.pintxos || {};
+			window.pintxos.Destroyable = definition();
+			window.define = null;
+		};
+	}
 
-	/* Methods
-	----------------------------------------------- */	
+	define([], function () {
 
-	/**
-	 * All bootstrap logic should go here
-	 * @return {void}
-	 */
-	Destroyable.prototype.init = function () {
+		/* Constructor
+		----------------------------------------------- */	
+		var Destroyable = function () {
+			this._isDestroyed = true;
+		};
+		
 
-		if(!this.isDestroyed()) {
-			this.destroy();
-		}
+		/* Methods
+		----------------------------------------------- */	
 
-		this._isDestroyed = false;
-	};
+		/**
+		 * All bootstrap logic should go here
+		 * @return {void}
+		 */
+		Destroyable.prototype.init = function () {
 
-	/**
-	 * All teardown logic should go here
-	 * @return {void}
-	 */
-	Destroyable.prototype.destroy = function () {
-		this._isDestroyed = true;
-	};
+			if(!this.isDestroyed()) {
+				this.destroy();
+			}
 
-	/**
-	 * Getter for _isDisposed
-	 * @return {Boolean}
-	 */
-	Destroyable.prototype.isDestroyed = function () {
-		return this._isDestroyed;
-	};
+			this._isDestroyed = false;
+		};
+
+		/**
+		 * All teardown logic should go here
+		 * @return {void}
+		 */
+		Destroyable.prototype.destroy = function () {
+			this._isDestroyed = true;
+		};
+
+		/**
+		 * Getter for _isDisposed
+		 * @return {Boolean}
+		 */
+		Destroyable.prototype.isDestroyed = function () {
+			return this._isDestroyed;
+		};
 
 
-	/* Export
-	----------------------------------------------- */
-	return Destroyable;
+		/* Export
+		----------------------------------------------- */
+		return Destroyable;
 
-});
+	});
+
+})(this);
